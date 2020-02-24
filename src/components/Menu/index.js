@@ -12,7 +12,7 @@ import {
   SignOutText,
 } from './styles';
 
-export default function Menu({translateY}) {
+export default function Menu({translateY, darkValue, darkChange}) {
   return (
     <Container
       style={{
@@ -26,24 +26,40 @@ export default function Menu({translateY}) {
           value="https://nubank.com.br/"
           size={80}
           color="#8b10ae"
-          backgroundColor="#fff"
+          backgroundColor={darkValue ? '#333' : '#fff'}
         />
       </Code>
       <Nav>
         <NavItem>
-          <Icon name="help-outline" size={20} color="#fff" />
+          <Icon
+            name="help-outline"
+            size={20}
+            color={darkValue ? '#8b10ae' : '#fff'}
+          />
           <NavText>Me ajuda</NavText>
         </NavItem>
         <NavItem>
-          <Icon name="person-outline" size={20} color="#fff" />
+          <Icon
+            name="person-outline"
+            size={20}
+            color={darkValue ? '#8b10ae' : '#fff'}
+          />
           <NavText>Perfil</NavText>
         </NavItem>
         <NavItem>
-          <Icon name="credit-card" size={20} color="#fff" />
+          <Icon
+            name="credit-card"
+            size={20}
+            color={darkValue ? '#8b10ae' : '#fff'}
+          />
           <NavText>Configurar cartão</NavText>
         </NavItem>
         <NavItem>
-          <Icon name="smartphone" size={20} color="#fff" />
+          <Icon
+            name="smartphone"
+            size={20}
+            color={darkValue ? '#8b10ae' : '#fff'}
+          />
           <NavText>Configurações do app</NavText>
         </NavItem>
       </Nav>

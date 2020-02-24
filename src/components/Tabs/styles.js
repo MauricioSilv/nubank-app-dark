@@ -15,7 +15,7 @@ export const TabsContainer = styled.ScrollView.attrs({
 export const TabItem = styled.View`
   width: 100px;
   height: 100px;
-  background: rgba(255, 255, 255, 0.2);
+  background: ${props => props.theme.backgroundTab};
   border-radius: 3px;
   margin-left: 10px;
   padding: 10px;
@@ -24,5 +24,5 @@ export const TabItem = styled.View`
 
 export const TabText = styled.Text`
   font-size: 13px;
-  color: #fff;
+  color: ${props => props.theme.tabText};
 `;

@@ -18,7 +18,7 @@ import {
   Annotation,
 } from './styles';
 
-export default function Main() {
+export default function Main({darkValue, darkChange}) {
   let offset = 0;
   const translateY = new Animated.Value(0);
   const animatedEvent = Animated.event(
@@ -62,9 +62,13 @@ export default function Main() {
 
   return (
     <Container>
-      <Header />
+      <Header darkValue={darkValue} darkChange={darkChange} />
       <Content>
-        <Menu translateY={translateY} />
+        <Menu
+          translateY={translateY}
+          darkValue={darkValue}
+          darkChange={darkChange}
+        />
 
         <PanGestureHandler
           onGestureEvent={animatedEvent}
@@ -82,8 +86,16 @@ export default function Main() {
               ],
             }}>
             <CardHeader>
-              <Icon name="attach-money" size={28} color="#666" />
-              <Icon name="visibility-off" size={28} color="#666" />
+              <Icon
+                name="attach-money"
+                size={28}
+                color={darkValue ? '#8b10ae' : '#666'}
+              />
+              <Icon
+                name="visibility-off"
+                size={28}
+                color={darkValue ? '#8b10ae' : '#666'}
+              />
             </CardHeader>
             <CardContent>
               <Title>Saldo disponível</Title>
@@ -92,14 +104,18 @@ export default function Main() {
             <CardFooter>
               <Annotation>
                 Transferencia de R$ 50,00 recebida de Mauricio da silva pereira
-                à 08:00.
+                às 08:00hrs.
               </Annotation>
             </CardFooter>
           </Card>
         </PanGestureHandler>
       </Content>
 
-      <Tabs translateY={translateY} />
+      <Tabs
+        translateY={translateY}
+        darkValue={darkValue}
+        darkChange={darkChange}
+      />
     </Container>
   );
 }

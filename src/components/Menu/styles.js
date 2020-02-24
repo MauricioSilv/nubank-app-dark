@@ -6,7 +6,7 @@ export const Container = styled(Animated.ScrollView)`
 `;
 
 export const Code = styled.View`
-  background: #fff;
+  background: ${props => props.theme.backgroundCode};
   padding: 10px;
   align-self: center;
 `;
@@ -14,24 +14,24 @@ export const Code = styled.View`
 export const Nav = styled.View`
   margin-top: 30px;
   border-top-width: ${StyleSheet.hairlineWidth}px;
-  border-top-color: rgba(255, 255, 255, 0.8);
+  border-top-color: ${props => props.theme.borderRows};
 `;
 export const NavItem = styled.View`
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
   border-bottom-width: ${StyleSheet.hairlineWidth}px;
-  border-bottom-color: rgba(255, 255, 255, 0.8);
+  border-bottom-color: ${props => props.theme.borderRows};
 `;
 export const NavText = styled.Text`
   font-size: 15px;
-  color: #fff;
+  color: ${props => props.theme.borderRows};
   margin-left: 20px;
 `;
 
 export const SignOutButtom = styled.TouchableOpacity`
   border-width: ${StyleSheet.hairlineWidth}px;
-  border-color: rgba(255, 255, 255, 0.8);
+  border-color: ${props => props.theme.borderRows};
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ export const SignOutButtom = styled.TouchableOpacity`
 `;
 
 export const SignOutText = styled.Text`
-  color: #fff;
+  color: ${props => props.theme.borderRows};
   font-weight: bold;
   font-size: 13px;
 `;

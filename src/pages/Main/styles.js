@@ -15,7 +15,7 @@ export const Content = styled.View`
 
 export const Card = styled(Animated.View)`
   flex: 1;
-  background: #fff;
+  background: ${props => props.theme.backgroundCard};
   border-radius: 4px;
   margin: 0 20px;
   height: 100%;
@@ -40,22 +40,22 @@ export const CardContent = styled.View`
 
 export const Title = styled.Text`
   font-size: 13px;
-  color: #999;
+  color: ${props => props.theme.colorTitle};
 `;
 
 export const Description = styled.Text`
   font-size: 32px;
   margin-top: 3px;
-  color: #333;
+  color: ${props => props.theme.descriptionText};
 `;
 
 export const CardFooter = styled.View`
   padding: 30px;
-  background: #eee;
+  background: ${props => props.theme.cardFooterColor};
   border-radius: 4px;
 `;
 
 export const Annotation = styled.Text`
   font-size: 12px;
-  color: #333;
+  color: ${props => props.theme.annotationText};
 `;
