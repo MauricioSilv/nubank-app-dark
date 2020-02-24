@@ -103,7 +103,7 @@ export default function Main({darkValue, darkChange}) {
             </CardContent>
             <CardFooter>
               <Annotation>
-                Transferencia de R$ 50,00 recebida de Mauricio da silva pereira
+                Transferência de R$ 50,00 recebida de Mauricio da silva pereira
                 às 08:00hrs.
               </Annotation>
             </CardFooter>
