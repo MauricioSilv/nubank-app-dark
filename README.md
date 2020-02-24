@@ -4,10 +4,10 @@
 
 Project that adds functionality in an obscure way in the Nubank app, my goal is to practice my knowledge with this project.
 
-<img src="src/screenshots/dark.png" width="200">
-<img src="src/screenshots/dark2.png" width="200">
-<img src="src/screenshots/default.png" width="200">
-<img src="src/screenshots/default2.png" width="200">
+<img src="src/screenshots/dark.png" width="300" align="left">
+<img src="src/screenshots/dark2.png" width="300">
+<img src="src/screenshots/default.png" width="300" align="left">
+<img src="src/screenshots/default2.png" width="300">
 
 ## Technology
 - **React Native** - A lib that provides a way to create native apps for Android and iOS.
