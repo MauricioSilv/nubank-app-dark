@@ -34,7 +34,7 @@ export default function Menu({translateY, darkValue, darkChange}) {
           <Icon
             name="help-outline"
             size={20}
-            color={darkValue ? '#8b10ae' : '#fff'}
+            color={darkValue ? 'rgba(255,255,255,0.7)' : '#fff'}
           />
           <NavText>Me ajuda</NavText>
         </NavItem>
@@ -42,7 +42,7 @@ export default function Menu({translateY, darkValue, darkChange}) {
           <Icon
             name="person-outline"
             size={20}
-            color={darkValue ? '#8b10ae' : '#fff'}
+            color={darkValue ? 'rgba(255,255,255,0.7)' : '#fff'}
           />
           <NavText>Perfil</NavText>
         </NavItem>
@@ -50,7 +50,7 @@ export default function Menu({translateY, darkValue, darkChange}) {
           <Icon
             name="credit-card"
             size={20}
-            color={darkValue ? '#8b10ae' : '#fff'}
+            color={darkValue ? 'rgba(255,255,255,0.7)' : '#fff'}
           />
           <NavText>Configurar cartão</NavText>
         </NavItem>
@@ -58,7 +58,7 @@ export default function Menu({translateY, darkValue, darkChange}) {
           <Icon
             name="smartphone"
             size={20}
-            color={darkValue ? '#8b10ae' : '#fff'}
+            color={darkValue ? 'rgba(255,255,255,0.7)' : '#fff'}
           />
           <NavText>Configurações do app</NavText>
         </NavItem>
